@@ -38,9 +38,9 @@ class Example extends React.Component {
     });
   };
 
-  _close = () => {
+  _close = target => {
     this.setState({
-      isOpen: false
+      [target]: false
     });
   };
 
@@ -64,7 +64,7 @@ ReactDOM.render(<Example />, document.getElementById("root"));
 
 ### Props
 
-| Props  | Required | Type     | Default   | Descriptioin                                          |
-| ------ | -------- | -------- | --------- | ----------------------------------------------------- |
-| close  | Yes      | function | undefined | The function to close the target component or element |
-| target | No       | string   | undefined | The target which the `close` function will work on    |
+| Props  | Required | Type     | Default   | Descriptioin                                                                                                    |
+| ------ | -------- | -------- | --------- | --------------------------------------------------------------------------------------------------------------- |
+| close  | Yes      | function | undefined | The function to close the target component or element                                                           |
+| target | No       | string   | undefined | The target(eg. `this.state.isOpen`) which the `close` function will work on. It will be args of close function. |

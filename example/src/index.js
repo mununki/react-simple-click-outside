@@ -14,9 +14,9 @@ class Example extends React.Component {
     });
   };
 
-  _close = () => {
+  _close = target => {
     this.setState({
-      isOpen: false
+      [target]: false
     });
   };
 
