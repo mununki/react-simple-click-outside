@@ -25,7 +25,7 @@ $ yarn add react-simple-click-outside
 ```javascript
 import React from "react";
 import ReactDOM from "react-dom";
-import ClickOutside from "../../src";
+import ClickOutside from "react-simple-click-outside";
 
 class Example extends React.Component {
   state = {
