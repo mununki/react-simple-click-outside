@@ -9,6 +9,7 @@ This module can help you to make such as drop-down menu, modal, popover, tooltip
 ### Features
 
 1. Listen click events of outside area.
+2. Typescript compatibility.
 
 ### Install
 
