@@ -1,6 +1,6 @@
 {
   "name": "react-simple-click-outside",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple click outside handler for React",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
