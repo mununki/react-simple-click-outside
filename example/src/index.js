@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ClickOutside from "../../src";
+import ClickOutside from "../../dist";
 import "./static/index.css";
 
 class Example extends React.Component {
