@@ -2,6 +2,8 @@
 
 ### [Demo](https://mattdamon108.github.io/react-simple-click-outside/)
 
+[![npm version](https://badge.fury.io/js/react-simple-click-outside.svg)](https://badge.fury.io/js/react-simple-click-outside)
+
 This is the tiny and simple click outside handler which enables your target component(or element) to listen click events outside of itself.
 
 This module can help you to make such as drop-down menu, modal, popover, tooltip easily.
