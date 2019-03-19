@@ -1,5 +1,5 @@
-import React from "react";
-import { IPropsClickOutside } from "../types/custom";
+import React from 'react';
+import {IPropsClickOutside} from '../types/custom';
 
 class ClickOutside extends React.Component<IPropsClickOutside> {
   private wrapperRef: React.RefObject<HTMLDivElement>;
@@ -10,11 +10,11 @@ class ClickOutside extends React.Component<IPropsClickOutside> {
   }
 
   componentDidMount() {
-    document.addEventListener("click", this._handleClickOutside);
+    document.addEventListener('click', this._handleClickOutside);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("click", this._handleClickOutside);
+    document.removeEventListener('click', this._handleClickOutside);
   }
 
   _handleClickOutside = (event: any) => {
@@ -22,7 +22,11 @@ class ClickOutside extends React.Component<IPropsClickOutside> {
       this.wrapperRef.current &&
       !this.wrapperRef.current.contains(event.target)
     ) {
-      this.props.close(this.props.target);
+      if (this.props.target) {
+        this.props.close(this.props.target);
+      } else {
+        this.props.close();
+      }
     }
   };
 
